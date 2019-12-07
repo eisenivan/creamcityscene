@@ -5,7 +5,6 @@ date +"%D %T" &&
   cd ~/Development/creamcityscene.com &&
   /usr/local/bin/node ./cache-artists.js &&
   /usr/local/bin/node ./build-playlist.js &&
-  /usr/local/bin/npm run deploy &&
   cd ./site &&
   npx gatsby build &&
   npx surge ./public creamcityscene.com
