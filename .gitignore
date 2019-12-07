@@ -1,6 +1,6 @@
 # Project specific
 list.json
-site/content/artistsinfo/artistinfo.json
+site/content/artistinfo/artistinfo.json
 site/content/shows/shows.json
 
 .vscode
