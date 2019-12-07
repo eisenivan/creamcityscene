@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docker-build": "docker build -t eisenivan/mke-today .",
-    "start": "/usr/local/bin/node ./cache-artists.js && /usr/local/bin/node ./build-playlist.js",
+    "start": "/usr/local/bin/node ./cache-artists.js && /usr/local/bin/node ./build-playlist.js && /usr/local/bin/npm run deploy",
     "deploy": "cd ./site && npx gatsby build && npx surge ./public http://creamcityscene.com"
   },
   "author": "",
