@@ -1,0 +1,23 @@
+{
+  "name": "mke-today",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker-build": "docker build -t eisenivan/mke-today .",
+    "start": "/usr/local/bin/node ./cache-artists.js && /usr/local/bin/node ./build-playlist.js",
+    "deploy": "cd ./site && npx gatsby build && npx surge ./public http://creamcityscene.com"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "lodash.compact": "^3.0.1",
+    "lodash.flatten": "^4.4.0",
+    "lodash.get": "^4.4.2",
+    "lodash.sortby": "^4.7.0",
+    "lodash.uniq": "^4.5.0",
+    "moment": "^2.24.0",
+    "spotify-web-api-node": "^4.0.0"
+  }
+}

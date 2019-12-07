@@ -1,0 +1,1310 @@
+[
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0YRwUbRxrawmnBdixwJi5W"
+      },
+      "followers": {
+        "href": null,
+        "total": 1120155
+      },
+      "genres": [
+        "banda",
+        "deep regional mexican",
+        "norteno",
+        "regional mexican",
+        "regional mexican pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/0YRwUbRxrawmnBdixwJi5W",
+      "id": "0YRwUbRxrawmnBdixwJi5W",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/663b123ee52a5d6bca9877f87a8c51d86146ef23",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/62af4dcf4b9cbe9fb14a0d5d06cfb524e86ad617",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/07101e7ab55c6e4f052df181f681d892968deadc",
+          "width": 160
+        }
+      ],
+      "name": "Regulo Caro",
+      "popularity": 70,
+      "type": "artist",
+      "uri": "spotify:artist:0YRwUbRxrawmnBdixwJi5W"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=85520",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3l02WF362j1oHOurzuseBv"
+      },
+      "followers": {
+        "href": null,
+        "total": 309574
+      },
+      "genres": [
+        "comic",
+        "comic metal",
+        "glam metal",
+        "hard rock",
+        "metal",
+        "rock",
+        "sleaze rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3l02WF362j1oHOurzuseBv",
+      "id": "3l02WF362j1oHOurzuseBv",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/a728b3139ad25e3c9f4c1f1280a07b18a0a1867e",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/46f1eda5b9895967c6ef0577af17427b4cf6132b",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/6c9c913ce9e3724d0163a8181a80a058c9e77982",
+          "width": 160
+        }
+      ],
+      "name": "Steel Panther",
+      "popularity": 61,
+      "type": "artist",
+      "uri": "spotify:artist:3l02WF362j1oHOurzuseBv"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=78684",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6ROyXB8NDG0fA78S46JdTB"
+      },
+      "followers": {
+        "href": null,
+        "total": 78434
+      },
+      "genres": [
+        "electro swing",
+        "nu jazz",
+        "swing",
+        "traditional swing"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6ROyXB8NDG0fA78S46JdTB",
+      "id": "6ROyXB8NDG0fA78S46JdTB",
+      "images": [
+        {
+          "height": 1135,
+          "url": "https://i.scdn.co/image/cd226234366fc20b0e44db234dbb623e41609d9f",
+          "width": 1000
+        },
+        {
+          "height": 727,
+          "url": "https://i.scdn.co/image/e65a69b20a10c0dd7212c71e75d91020150a3c19",
+          "width": 640
+        },
+        {
+          "height": 227,
+          "url": "https://i.scdn.co/image/6174aa8fd0b2994098623004e664343fee92c9ab",
+          "width": 200
+        },
+        {
+          "height": 73,
+          "url": "https://i.scdn.co/image/4ce5cad2261b5c40f83cc281f8b4c9d3deb3fac9",
+          "width": 64
+        }
+      ],
+      "name": "Big Bad Voodoo Daddy",
+      "popularity": 50,
+      "type": "artist",
+      "uri": "spotify:artist:6ROyXB8NDG0fA78S46JdTB"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=76138",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6LQTcsnz73GAgqVfdSx09o"
+      },
+      "followers": {
+        "href": null,
+        "total": 55720
+      },
+      "genres": [
+        "comedy",
+        "comic"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6LQTcsnz73GAgqVfdSx09o",
+      "id": "6LQTcsnz73GAgqVfdSx09o",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/62397c49dfb1ca04a4886d2f9ec5d87197bd5050",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/3ad38c0295cb5c1e76ccb00729a55615a056787c",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/172795aa90d6c8640ecfc8ae684e6b54f9998299",
+          "width": 160
+        }
+      ],
+      "name": "Jeff Dunham",
+      "popularity": 46,
+      "type": "artist",
+      "uri": "spotify:artist:6LQTcsnz73GAgqVfdSx09o"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=72687",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4XG961Y3fzZF5k2gfpnaNt"
+      },
+      "followers": {
+        "href": null,
+        "total": 39442
+      },
+      "genres": [
+        "gothic alternative",
+        "pixie",
+        "pop emo",
+        "post-screamo",
+        "slayer"
+      ],
+      "href": "https://api.spotify.com/v1/artists/4XG961Y3fzZF5k2gfpnaNt",
+      "id": "4XG961Y3fzZF5k2gfpnaNt",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/61296ef3a6c3d364bd64b5b8c1d8ac7a7dafc88c",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/72b6246fa28830f453d246fd98c3eb91629062ae",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/e8abfd2308f94564abc1be3cd225748f54a4d632",
+          "width": 160
+        }
+      ],
+      "name": "Stitched Up Heart",
+      "popularity": 45,
+      "type": "artist",
+      "uri": "spotify:artist:4XG961Y3fzZF5k2gfpnaNt"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=79077",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/2TgTMg8jrIQjJ3uWkLw93J"
+      },
+      "followers": {
+        "href": null,
+        "total": 16494
+      },
+      "genres": [
+        "modern blues",
+        "modern blues rock",
+        "modern southern rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/2TgTMg8jrIQjJ3uWkLw93J",
+      "id": "2TgTMg8jrIQjJ3uWkLw93J",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2739fd4c73b7eecd01d654ee7d4",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e029fd4c73b7eecd01d654ee7d4",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048519fd4c73b7eecd01d654ee7d4",
+          "width": 64
+        }
+      ],
+      "name": "The Steepwater Band",
+      "popularity": 37,
+      "type": "artist",
+      "uri": "spotify:artist:2TgTMg8jrIQjJ3uWkLw93J"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=79617",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3pyaq3zAwZ7nGxdP1P8pid"
+      },
+      "followers": {
+        "href": null,
+        "total": 785
+      },
+      "genres": [
+        "christian hip hop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3pyaq3zAwZ7nGxdP1P8pid",
+      "id": "3pyaq3zAwZ7nGxdP1P8pid",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/dcdb9a3755bd15e00c0fedc0a35630338e02e645",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/54b8b2147bf66845f7179a528251d082a79e0e5c",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/f56bd571bc1d5f4eddf81d269fba19ee64f65bbe",
+          "width": 160
+        }
+      ],
+      "name": "Marqus Anthony",
+      "popularity": 26,
+      "type": "artist",
+      "uri": "spotify:artist:3pyaq3zAwZ7nGxdP1P8pid"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=77780",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4elV7QXSkvQNskYUEc5SFe"
+      },
+      "followers": {
+        "href": null,
+        "total": 3095
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/4elV7QXSkvQNskYUEc5SFe",
+      "id": "4elV7QXSkvQNskYUEc5SFe",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/b857104c5cf9b0e2566d998daa2bdb115ae38651",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/019456991103fbb1e31051f19e6d0b9f63946930",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/8c7fcaa97471829877baa018786292f932c4a699",
+          "width": 160
+        }
+      ],
+      "name": "Olivia Jean",
+      "popularity": 24,
+      "type": "artist",
+      "uri": "spotify:artist:4elV7QXSkvQNskYUEc5SFe"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=77957",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/76Rnjxk1gBlp85HTEwR48R"
+      },
+      "followers": {
+        "href": null,
+        "total": 1610
+      },
+      "genres": [
+        "rochester mn indie"
+      ],
+      "href": "https://api.spotify.com/v1/artists/76Rnjxk1gBlp85HTEwR48R",
+      "id": "76Rnjxk1gBlp85HTEwR48R",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27320dadc6e1d8132586403af02",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0220dadc6e1d8132586403af02",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485120dadc6e1d8132586403af02",
+          "width": 64
+        }
+      ],
+      "name": "Good Morning Bedlam",
+      "popularity": 22,
+      "type": "artist",
+      "uri": "spotify:artist:76Rnjxk1gBlp85HTEwR48R"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=75781",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6lib5PryDEdaqbVKPgIMbC"
+      },
+      "followers": {
+        "href": null,
+        "total": 3011
+      },
+      "genres": [
+        "bass house",
+        "witch house"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6lib5PryDEdaqbVKPgIMbC",
+      "id": "6lib5PryDEdaqbVKPgIMbC",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/fff38edf5796807ca593183e84aecd89308d47f6",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/0d87acae498eaa7416c748d55f6d0d92c839d025",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ad51ba4e068013541b27e39d923a70d5a51902dc",
+          "width": 160
+        }
+      ],
+      "name": "Tombz",
+      "popularity": 21,
+      "type": "artist",
+      "uri": "spotify:artist:6lib5PryDEdaqbVKPgIMbC"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=80667",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0kGuJzCPQ7xK8Lbdj2hReN"
+      },
+      "followers": {
+        "href": null,
+        "total": 11
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/0kGuJzCPQ7xK8Lbdj2hReN",
+      "id": "0kGuJzCPQ7xK8Lbdj2hReN",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738874c1eb932685ec02c34e2b",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028874c1eb932685ec02c34e2b",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518874c1eb932685ec02c34e2b",
+          "width": 64
+        }
+      ],
+      "name": "Avila",
+      "popularity": 19,
+      "type": "artist",
+      "uri": "spotify:artist:0kGuJzCPQ7xK8Lbdj2hReN"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=79821",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0YlK0Slo7Qk4lhhlSz9xOU"
+      },
+      "followers": {
+        "href": null,
+        "total": 985
+      },
+      "genres": [
+        "modern ska punk",
+        "punk ska"
+      ],
+      "href": "https://api.spotify.com/v1/artists/0YlK0Slo7Qk4lhhlSz9xOU",
+      "id": "0YlK0Slo7Qk4lhhlSz9xOU",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/98e0e278a29c3ae986b02fe83e8fdf00c0f4fff9",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/b57530265217616ed6be41568a13ffe0650ba2a6",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/dab77acbc053077239eba106197c881e43d0ff09",
+          "width": 160
+        }
+      ],
+      "name": "Something To Do",
+      "popularity": 18,
+      "type": "artist",
+      "uri": "spotify:artist:0YlK0Slo7Qk4lhhlSz9xOU"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=72130",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/64SVur28dky1V3fMlVgWgZ"
+      },
+      "followers": {
+        "href": null,
+        "total": 166
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/64SVur28dky1V3fMlVgWgZ",
+      "id": "64SVur28dky1V3fMlVgWgZ",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/b960611950a91ca490294f0c142fc8b73d6f2e68",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/0b895d03471fe97cc404e13b6bfa14cb0b0b1c3a",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/03a0338ec033a3051014683b1a18b2fd4ce00784",
+          "width": 160
+        }
+      ],
+      "name": "Da Church",
+      "popularity": 18,
+      "type": "artist",
+      "uri": "spotify:artist:64SVur28dky1V3fMlVgWgZ"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=79323",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1RSmg9ZZaQA6x7RGRpIQ1f"
+      },
+      "followers": {
+        "href": null,
+        "total": 12434
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/1RSmg9ZZaQA6x7RGRpIQ1f",
+      "id": "1RSmg9ZZaQA6x7RGRpIQ1f",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/95fae05ee6b246aede60377d9847687303a24dfe",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/fca12fb3891abfb97480d97aad689ab01ccd99af",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/dcd8248967077270862f7a7e78f691f1b5a12bfa",
+          "width": 160
+        }
+      ],
+      "name": "Miraql3",
+      "popularity": 18,
+      "type": "artist",
+      "uri": "spotify:artist:1RSmg9ZZaQA6x7RGRpIQ1f"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=73248",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4kjeOAFWNDNMtspoujP0fh"
+      },
+      "followers": {
+        "href": null,
+        "total": 285
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/4kjeOAFWNDNMtspoujP0fh",
+      "id": "4kjeOAFWNDNMtspoujP0fh",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/7b0bb6cb94d6f108f81b960463881c02e1c16857",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/bb68e0cdd4bf346d96ce7e8d2ee06f6826c886d7",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/dcc21f9e21efeda20c4027e33eae71b5ba525103",
+          "width": 160
+        }
+      ],
+      "name": "Brotha Dre",
+      "popularity": 17,
+      "type": "artist",
+      "uri": "spotify:artist:4kjeOAFWNDNMtspoujP0fh"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=72110",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1AqoxUC6J6PdRjbc3wLlhk"
+      },
+      "followers": {
+        "href": null,
+        "total": 1776
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/1AqoxUC6J6PdRjbc3wLlhk",
+      "id": "1AqoxUC6J6PdRjbc3wLlhk",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/8e63169b60063ac4901622db6e7461d1ed74a773",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/a6e0f5a0defd45c753591a80a80283544d9f8f8f",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/5ed366354ea53a3f8bd607cf3755e4ddb3a9f30a",
+          "width": 160
+        }
+      ],
+      "name": "500 Miles To Memphis",
+      "popularity": 16,
+      "type": "artist",
+      "uri": "spotify:artist:1AqoxUC6J6PdRjbc3wLlhk"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=80756",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1eVoR4YEzAQwnIPpNntYLF"
+      },
+      "followers": {
+        "href": null,
+        "total": 108
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/1eVoR4YEzAQwnIPpNntYLF",
+      "id": "1eVoR4YEzAQwnIPpNntYLF",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/e0e0881bb7aa328690f1695549dabb2d0e9cf56e",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/e9f18b1a00a135ca23ffbf1405e5363be0c218e4",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/a39dfbdaf52327e0c854e692b16460213e64faaa",
+          "width": 160
+        }
+      ],
+      "name": "DJ Kideazy",
+      "popularity": 13,
+      "type": "artist",
+      "uri": "spotify:artist:1eVoR4YEzAQwnIPpNntYLF"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=83423",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0YDHzu1EeRjKSTjjDJxfC4"
+      },
+      "followers": {
+        "href": null,
+        "total": 465
+      },
+      "genres": [
+        "minneapolis punk"
+      ],
+      "href": "https://api.spotify.com/v1/artists/0YDHzu1EeRjKSTjjDJxfC4",
+      "id": "0YDHzu1EeRjKSTjjDJxfC4",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/828657fb5102b44b20f41373c55b71e395cb45ef",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/bbbe31dedc7ebecde919685a34d780572ee946bf",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/e253b432f6bf563673f4232cd46dfa65344df000",
+          "width": 160
+        }
+      ],
+      "name": "Space Monkey Mafia",
+      "popularity": 12,
+      "type": "artist",
+      "uri": "spotify:artist:0YDHzu1EeRjKSTjjDJxfC4"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=80318",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1cU7HOenSlQPRNEC9c8t7N"
+      },
+      "followers": {
+        "href": null,
+        "total": 116
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/1cU7HOenSlQPRNEC9c8t7N",
+      "id": "1cU7HOenSlQPRNEC9c8t7N",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/410f3b4d754caf5549f6d1d1cd0aa9616f126375",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/f37218fcffc9438c6d73d61c61a561bd4bdfc73d",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/02a2bc2edb2108d4324dc32d93091d89a43786ae",
+          "width": 160
+        }
+      ],
+      "name": "Wurk",
+      "popularity": 7,
+      "type": "artist",
+      "uri": "spotify:artist:1cU7HOenSlQPRNEC9c8t7N"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=82880",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/19IxcOLeJds0dHL9SpyOvP"
+      },
+      "followers": {
+        "href": null,
+        "total": 25
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/19IxcOLeJds0dHL9SpyOvP",
+      "id": "19IxcOLeJds0dHL9SpyOvP",
+      "images": [],
+      "name": "Andy Frasco",
+      "popularity": 4,
+      "type": "artist",
+      "uri": "spotify:artist:19IxcOLeJds0dHL9SpyOvP"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=83969",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/69C2PLoYV7efuKlnZxrlgF"
+      },
+      "followers": {
+        "href": null,
+        "total": 53
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/69C2PLoYV7efuKlnZxrlgF",
+      "id": "69C2PLoYV7efuKlnZxrlgF",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273c3054dee95de094019630037",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02c3054dee95de094019630037",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851c3054dee95de094019630037",
+          "width": 64
+        }
+      ],
+      "name": "Muddy Udders",
+      "popularity": 1,
+      "type": "artist",
+      "uri": "spotify:artist:69C2PLoYV7efuKlnZxrlgF"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=72049",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6yLBwb92bRQG7HKhDp6MBb"
+      },
+      "followers": {
+        "href": null,
+        "total": 24
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/6yLBwb92bRQG7HKhDp6MBb",
+      "id": "6yLBwb92bRQG7HKhDp6MBb",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273b906254e86e7337503e0c08f",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02b906254e86e7337503e0c08f",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851b906254e86e7337503e0c08f",
+          "width": 64
+        }
+      ],
+      "name": "Koshka",
+      "popularity": 0,
+      "type": "artist",
+      "uri": "spotify:artist:6yLBwb92bRQG7HKhDp6MBb"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=75357",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/5b4i40pHe3AucQYQPBpMwi"
+      },
+      "followers": {
+        "href": null,
+        "total": 5
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/5b4i40pHe3AucQYQPBpMwi",
+      "id": "5b4i40pHe3AucQYQPBpMwi",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27360b19b7f1c86305bda760eb2",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0260b19b7f1c86305bda760eb2",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485160b19b7f1c86305bda760eb2",
+          "width": 64
+        }
+      ],
+      "name": "Future Plans",
+      "popularity": 0,
+      "type": "artist",
+      "uri": "spotify:artist:5b4i40pHe3AucQYQPBpMwi"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=83394",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3TG8w2EFzgEprHkQnZZLII"
+      },
+      "followers": {
+        "href": null,
+        "total": 12
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/3TG8w2EFzgEprHkQnZZLII",
+      "id": "3TG8w2EFzgEprHkQnZZLII",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273df1a9348b697f7f35bc0ff39",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02df1a9348b697f7f35bc0ff39",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851df1a9348b697f7f35bc0ff39",
+          "width": 64
+        }
+      ],
+      "name": "Ramon Speed",
+      "popularity": 0,
+      "type": "artist",
+      "uri": "spotify:artist:3TG8w2EFzgEprHkQnZZLII"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=77743",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  },
+  {
+    "body": {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6HblM1tX7CsnxjH1di7FJw"
+      },
+      "followers": {
+        "href": null,
+        "total": 42
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/6HblM1tX7CsnxjH1di7FJw",
+      "id": "6HblM1tX7CsnxjH1di7FJw",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27301e81ad453c029c9d7022ede",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0201e81ad453c029c9d7022ede",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485101e81ad453c029c9d7022ede",
+          "width": 64
+        }
+      ],
+      "name": "Phil Yates & the Affiliates",
+      "popularity": 0,
+      "type": "artist",
+      "uri": "spotify:artist:6HblM1tX7CsnxjH1di7FJw"
+    },
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=72834",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context",
+      "access-control-allow-methods": "GET, POST, OPTIONS, PUT, DELETE, PATCH",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "604800",
+      "content-encoding": "gzip",
+      "date": "Sat, 07 Dec 2019 05:19:29 GMT",
+      "via": "1.1 google",
+      "alt-svc": "clear",
+      "connection": "close",
+      "transfer-encoding": "chunked"
+    },
+    "statusCode": 200
+  }
+]
