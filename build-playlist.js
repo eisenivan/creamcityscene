@@ -6,7 +6,7 @@ const get = require('lodash.get')
 const sortBy = require('lodash.sortby')
 const compact = require('lodash.compact')
 const flatten = require('lodash.flatten')
-const artistList = require('./list.json')
+const artistList = require('./list-this-week.json')
 
 const playlistId = '2a6r9HrB1x3rxBqlhb2qSn'
 let authorizationCode = 'TOKEN'
@@ -77,7 +77,11 @@ async function findArtist (spotifyApi, artist) {
 }
 
 async function findArtists (spotifyApi, artistList) {
-  return Promise.all(artistList.map(async x => findArtist(spotifyApi, x)))
+  if (artistList.length > 0) {
+    return Promise.all(artistList.map(async x => findArtist(spotifyApi, x)))
+  }
+
+  return false
 }
 
 async function addTracks (songs) {
