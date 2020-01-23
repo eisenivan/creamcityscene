@@ -35,6 +35,9 @@ export const query = graphql`
           images {
             url
           }
+          external_urls {
+            spotify
+          }
           name
           popularity
           genres

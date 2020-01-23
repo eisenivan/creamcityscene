@@ -1,19 +1,19 @@
-const favicons = require('favicons');
-const path = require('path');
-const fs = require('fs');
+const favicons = require('favicons')
+const path = require('path')
+const fs = require('fs')
 
 const {
   siteTitleShort,
   themeColor,
-  backgroundColor,
-} = require('../site-config');
+  backgroundColor
+} = require('../site-config')
 
-const dir = path.resolve(__dirname, '../public/icons/');
+const dir = path.resolve(__dirname, '../public/icons/')
 if (!fs.existsSync(dir)) {
-  fs.mkdirSync(dir);
+  fs.mkdirSync(dir)
 }
 
-const source = 'src/images/icon.png';
+const source = 'src/images/icon.png'
 const configuration = {
   path: '/icons/',
   appName: siteTitleShort,
@@ -37,14 +37,14 @@ const configuration = {
     favicons: true,
     firefox: false,
     windows: true,
-    yandex: false,
-  },
-};
+    yandex: false
+  }
+}
 
-const callback = function(err, res) {
+const callback = function (err, res) {
   if (err) {
-    console.log(err.message);
-    return;
+    console.log(err.message)
+    return
   }
 
   res.images.forEach(image => {
@@ -53,11 +53,11 @@ const callback = function(err, res) {
       image.contents,
       err => {
         if (err) {
-          console.log(err);
+          console.log(err)
         }
       }
-    );
-  });
+    )
+  })
 
   res.files.forEach(file => {
     fs.writeFile(
@@ -65,11 +65,11 @@ const callback = function(err, res) {
       file.contents,
       err => {
         if (err) {
-          console.log(err);
+          console.log(err)
         }
       }
-    );
-  });
-};
+    )
+  })
+}
 
-favicons(source, configuration, callback);
+favicons(source, configuration, callback)

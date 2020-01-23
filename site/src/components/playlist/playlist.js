@@ -12,7 +12,8 @@ const Playlist = ({ children }) => (
 )
 
 Playlist.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object).isRequired
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  children: PropTypes.children
 }
 
 export default Playlist

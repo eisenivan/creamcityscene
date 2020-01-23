@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Button = styled.button`
   -webkit-appearance: none;
@@ -29,7 +29,7 @@ export const Button = styled.button`
   & + & {
     margin-left: 1rem;
   }
-`;
+`
 
 export const Close = styled.button`
   -webkit-appearance: none;
@@ -44,4 +44,4 @@ export const Close = styled.button`
   top: 0;
   right: 0;
   color: #fff;
-`;
+`

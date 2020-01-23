@@ -7,9 +7,9 @@ export default ({
   siteUrl,
   pageTitle,
   siteTitle,
-  pageTitleFull,
+  pageTitleFull
 }) => {
-  const isSubPage = pageTitle && location.pathname !== '/';
+  const isSubPage = pageTitle && location.pathname !== '/'
 
   let schema = [
     {
@@ -17,9 +17,9 @@ export default ({
       '@type': 'WebSite',
       url: canonical,
       name: pageTitle || siteTitle,
-      alternateName: pageTitleFull,
-    },
-  ];
+      alternateName: pageTitleFull
+    }
+  ]
 
   if (isSubPage) {
     schema.push({
@@ -31,20 +31,20 @@ export default ({
           position: 1,
           item: {
             '@id': siteUrl,
-            name: siteTitle,
-          },
+            name: siteTitle
+          }
         },
         {
           '@type': 'ListItem',
           position: 2,
           item: {
             '@id': canonical,
-            name: pageTitle,
-          },
-        },
-      ],
-    });
+            name: pageTitle
+          }
+        }
+      ]
+    })
   }
 
-  return schema;
-};
+  return schema
+}

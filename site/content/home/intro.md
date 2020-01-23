@@ -1,1 +1,1 @@
-Shining a spotlight on the bands playing in and around Milwaukee today
+Shining a spotlight on the bands playing in and around Milwaukee this week

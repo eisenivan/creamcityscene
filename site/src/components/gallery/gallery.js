@@ -6,7 +6,9 @@ import { Container } from './gallery.css'
 const Gallery = ({ items }) => (
   <Container>
     {items.map((item, i) => (
-      <Item {...item.body} key={i} />
+      <>
+        <Item {...item.body} key={i} />
+      </>
     ))}
   </Container>
 )

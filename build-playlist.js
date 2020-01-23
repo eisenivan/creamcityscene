@@ -6,7 +6,7 @@ const get = require('lodash.get')
 const sortBy = require('lodash.sortby')
 const compact = require('lodash.compact')
 const flatten = require('lodash.flatten')
-const artistList = require('./list-this-week.json')
+const artistList = require('./list.json')
 
 const playlistId = '2a6r9HrB1x3rxBqlhb2qSn'
 let authorizationCode = 'TOKEN'
@@ -48,7 +48,11 @@ async function auth () {
 }
 
 async function getPlaylist (spotifyApi) {
-  return spotifyApi.getPlaylist(playlistId)
+  try {
+    return spotifyApi.getPlaylist(playlistId)
+  } catch (e) {
+    console.log(e)
+  }
 }
 
 async function deleteAllTracks (tracks) {
@@ -72,13 +76,21 @@ async function deleteAllTracks (tracks) {
 }
 
 async function findArtist (spotifyApi, artist) {
-  const artists = await spotifyApi.searchArtists(artist)
-  return get(artists.body.artists.items.find(x => x.name === artist), 'id')
+  try {
+    const artists = await spotifyApi.searchArtists(artist)
+    return get(artists.body.artists.items.find(x => x.name === artist), 'id')
+  } catch (e) {
+    console.log(e)
+  }
 }
 
 async function findArtists (spotifyApi, artistList) {
-  if (artistList.length > 0) {
-    return Promise.all(artistList.map(async x => findArtist(spotifyApi, x)))
+  try {
+    if (artistList.length > 0) {
+      return Promise.all(artistList.map(async x => findArtist(spotifyApi, x)))
+    }
+  } catch (e) {
+    console.log(e)
   }
 
   return false
@@ -111,30 +123,34 @@ function sortArtistsByPopularity (arr) {
 }
 
 async function refreshPlaylist () {
-  const spotifyApi = await auth()
-  const list = await getPlaylist(spotifyApi)
+  try {
+    const spotifyApi = await auth()
+    const list = await getPlaylist(spotifyApi)
 
-  const tracks = list.body.tracks.items
-    .map((x, i) => ({ uri: x.track.uri, positions: [i] }))
+    const tracks = list.body.tracks.items
+      .map((x, i) => ({ uri: x.track.uri, positions: [i] }))
 
-  if (tracks.length > 0) {
-    await deleteAllTracks(tracks)
+    if (tracks.length > 0) {
+      await deleteAllTracks(tracks)
+    }
+
+    const artists = compact(await findArtists(spotifyApi, artistList))
+    const topTracks = await Promise.all(artists.map(async x => spotifyApi.getArtistTopTracks(x, 'US')))
+
+    // build artist data cache
+    const artistInfo = await Promise.all(artists.map(async x => spotifyApi.getArtist(x)))
+    fs.writeFileSync('./site/content/artistinfo/artistinfo.json', JSON.stringify(sortArtistsByPopularity(artistInfo), null, 2))
+
+    const finalSongs = buildPlaylist(
+      sortTopTracksByPopularity(topTracks)
+        .map(x => x.body.tracks
+          .map(y => y.uri))
+    )
+
+    await addTracks(compact(finalSongs))
+  } catch (e) {
+    console.log(e)
   }
-
-  const artists = compact(await findArtists(spotifyApi, artistList))
-  const topTracks = await Promise.all(artists.map(async x => spotifyApi.getArtistTopTracks(x, 'US')))
-
-  // build artist data cache
-  const artistInfo = await Promise.all(artists.map(async x => spotifyApi.getArtist(x)))
-  fs.writeFileSync('./site/content/artistinfo/artistinfo.json', JSON.stringify(sortArtistsByPopularity(artistInfo), null, 2))
-
-  const finalSongs = buildPlaylist(
-    sortTopTracksByPopularity(topTracks)
-      .map(x => x.body.tracks
-        .map(y => y.uri))
-  )
-
-  await addTracks(compact(finalSongs))
 }
 
 refreshPlaylist()
