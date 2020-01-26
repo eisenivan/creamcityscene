@@ -1,20 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Item from 'components/gallery/item'
-import { Container } from './gallery.css'
+import { Container, DateTitle } from './gallery.css'
 
-const Gallery = ({ items }) => (
-  <Container>
-    {items.map((item, i) => (
-      <>
-        <Item {...item.body} key={i} />
-      </>
+const Gallery = ({ days }) => (
+  <div>
+    {days.map((day) => (
+      <div key={day.edges[0].node.body.start.date}>
+        <DateTitle>{day.edges[0].node.body.start.date}</DateTitle>
+        <Container>
+          {day.edges.map((item, i) => (
+            <Item {...item.node.body} key={`${i}-${day.edges[0].node.body.start.date}`} />
+          ))}
+        </Container>
+      </div>
     ))}
-  </Container>
+  </div>
 )
 
 Gallery.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object).isRequired
+  days: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default Gallery

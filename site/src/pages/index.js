@@ -16,7 +16,7 @@ const Index = ({ data }) => (
     </Box>
 
     <Playlist>
-      <Gallery items={data.allArtistinfoJson.nodes} />
+      <Gallery days={data.allArtistinfoJson.group} />
     </Playlist>
   </Layout>
 )
@@ -29,9 +29,11 @@ export default Index
 
 export const query = graphql`
   query HomepageQuery {
-    allArtistinfoJson {
-      nodes {
-        body {
+    allArtistinfoJson(sort: {fields: body___start___date, order: ASC}) {
+      group(field: body___start___date) {
+        edges {
+          node {
+            body {
           images {
             url
           }
@@ -41,6 +43,11 @@ export const query = graphql`
           name
           popularity
           genres
+          start {
+            date(formatString: "M/D/YYYY")
+          }
+        }
+          }
         }
       }
     }

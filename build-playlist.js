@@ -3,10 +3,12 @@ const SpotifyWebApi = require('spotify-web-api-node')
 const axios = require('axios')
 const querystring = require('querystring')
 const get = require('lodash.get')
+const set = require('lodash.set')
 const sortBy = require('lodash.sortby')
 const compact = require('lodash.compact')
 const flatten = require('lodash.flatten')
 const artistList = require('./list.json')
+const showList = require('./site/content/shows/shows.json')
 
 const playlistId = '2a6r9HrB1x3rxBqlhb2qSn'
 let authorizationCode = 'TOKEN'
@@ -30,6 +32,7 @@ function buildPlaylist (arr) {
 
 async function auth () {
   try {
+    console.log('refresh token')
     const result = await axios.post('https://accounts.spotify.com/api/token', querystring.stringify({ grant_type: 'refresh_token', refresh_token: 'AQDsD0tIxRqa7h7ARMCxIJEfxER4u36paQrpx-Kl3u9IgCIIUOOlX9kaYpG4hh2JXImkfVIYq6ceGeiGOMLu7BRaXADUdI1exMxp8OyNRwh_HqzbSmM1hxxjEdFoYfiaF2k' }), config)
     const { data } = result
 
@@ -49,6 +52,7 @@ async function auth () {
 
 async function getPlaylist (spotifyApi) {
   try {
+    console.log('playlist')
     return spotifyApi.getPlaylist(playlistId)
   } catch (e) {
     console.log(e)
@@ -57,6 +61,7 @@ async function getPlaylist (spotifyApi) {
 
 async function deleteAllTracks (tracks) {
   try {
+    console.log('delete all tracks')
     const res = await axios.delete(
       `https://api.spotify.com/v1/playlists/${playlistId}/tracks`,
       {
@@ -77,6 +82,7 @@ async function deleteAllTracks (tracks) {
 
 async function findArtist (spotifyApi, artist) {
   try {
+    console.log(`find artist: ${artist}`)
     const artists = await spotifyApi.searchArtists(artist)
     return get(artists.body.artists.items.find(x => x.name === artist), 'id')
   } catch (e) {
@@ -86,6 +92,7 @@ async function findArtist (spotifyApi, artist) {
 
 async function findArtists (spotifyApi, artistList) {
   try {
+    console.log('find artists')
     if (artistList.length > 0) {
       return Promise.all(artistList.map(async x => findArtist(spotifyApi, x)))
     }
@@ -98,6 +105,7 @@ async function findArtists (spotifyApi, artistList) {
 
 async function addTracks (songs) {
   try {
+    console.log('add tracks')
     const res = await axios.post(
       `https://api.spotify.com/v1/playlists/${playlistId}/tracks?uris=${encodeURIComponent(songs.join(','))}`,
       null,
@@ -122,6 +130,23 @@ function sortArtistsByPopularity (arr) {
   return sortBy(arr, o => get(o.body, 'popularity', 0)).reverse()
 }
 
+function mergeShowInfo (artistInfo) {
+  console.log('merge show info')
+  return artistInfo.map((x) => {
+    const artist = get(x, 'body.name')
+    showList.forEach((show) => {
+      const performances = get(show, 'performance', [])
+
+      if (performances.find(performance => performance.artist.displayName === artist)) {
+        set(x, 'body.performance', show.performance)
+        set(x, 'body.start', show.start)
+      }
+    })
+
+    return x
+  })
+}
+
 async function refreshPlaylist () {
   try {
     const spotifyApi = await auth()
@@ -139,7 +164,11 @@ async function refreshPlaylist () {
 
     // build artist data cache
     const artistInfo = await Promise.all(artists.map(async x => spotifyApi.getArtist(x)))
-    fs.writeFileSync('./site/content/artistinfo/artistinfo.json', JSON.stringify(sortArtistsByPopularity(artistInfo), null, 2))
+
+    // merge event details
+    const artistInfoWithShows = mergeShowInfo(artistInfo)
+
+    fs.writeFileSync('./site/content/artistinfo/artistinfo.json', JSON.stringify(sortArtistsByPopularity(artistInfoWithShows), null, 2))
 
     const finalSongs = buildPlaylist(
       sortTopTracksByPopularity(topTracks)

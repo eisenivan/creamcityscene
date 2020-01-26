@@ -15,6 +15,7 @@
     "lodash.compact": "^3.0.1",
     "lodash.flatten": "^4.4.0",
     "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2",
     "lodash.sortby": "^4.7.0",
     "lodash.uniq": "^4.5.0",
     "moment": "^2.24.0",
