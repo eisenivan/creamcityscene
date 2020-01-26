@@ -19,4 +19,8 @@ export const IframeContainer = styled.div`
     margin-top: 4rem;
     margin-left: 4rem;
   `};
+
+  ${MEDIA.PHONE`
+    margin-left: 0rem;
+  `};
 `
