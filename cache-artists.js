@@ -6,7 +6,7 @@ const flatten = require('lodash.flatten')
 const moment = require('moment')
 
 const today = moment().format('YYYY-MM-DD')
-const thisWeek = moment().add(5, 'days').format('YYYY-MM-DD')
+const thisWeek = moment().add(7, 'days').format('YYYY-MM-DD')
 
 axios.get(`https://api.songkick.com/api/3.0/metro_areas/15405-us-milwaukee/calendar.json?apikey=lUMYaWAtyzEue1rK&min_date=${today}&max_date=${thisWeek}`)
   .then(({ data }) => {

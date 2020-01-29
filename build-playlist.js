@@ -90,10 +90,21 @@ async function findArtist (spotifyApi, artist) {
   }
 }
 
+function timer (ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
 async function findArtists (spotifyApi, artistList) {
   try {
     console.log('find artists')
     if (artistList.length > 0) {
+      // trottled
+      const promises = []
+      for (let i = 0; i < artistList.length - 1; i++) {
+        promises.push(findArtist(spotifyApi, artistList[i]))
+        await timer(1500)
+      }
+
       return Promise.all(artistList.map(async x => findArtist(spotifyApi, x)))
     }
   } catch (e) {
