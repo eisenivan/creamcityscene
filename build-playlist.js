@@ -176,7 +176,6 @@ async function refreshPlaylist () {
     }
 
     const artists = compact(await findArtists(spotifyApi, artistList))
-    console.log(artists)
     const topTracks = await Promise.all(artists.map(async x => spotifyApi.getArtistTopTracks(x, 'US')))
 
     // build artist data cache
