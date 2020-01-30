@@ -80,13 +80,18 @@ async function deleteAllTracks (tracks) {
   }
 }
 
-async function findArtist (spotifyApi, artist) {
+async function findArtist (spotifyApi, artist, logText) {
   try {
-    console.log(`find artist: ${artist}`)
+    console.log(`${artist} (${logText})`)
     const artists = await spotifyApi.searchArtists(artist)
-    return get(artists.body.artists.items.find(x => x.name === artist), 'id')
+    if (typeof artists.body.artists.items === 'undefined') {
+      console.log('NOT FOUND!')
+    }
+
+    return get(artists.body.artists.items.find(x => x.name === artist), 'id', get(artists, 'body.artists.items[0].id'))
   } catch (e) {
     console.log(e)
+    return {}
   }
 }
 
@@ -100,12 +105,12 @@ async function findArtists (spotifyApi, artistList) {
     if (artistList.length > 0) {
       // trottled
       const promises = []
-      for (let i = 0; i < artistList.length - 1; i++) {
-        promises.push(findArtist(spotifyApi, artistList[i]))
+      for (let i = 0; i < artistList.length; i++) {
+        promises.push(findArtist(spotifyApi, artistList[i], `${i + 1} of ${artistList.length}`))
         await timer(1500)
       }
 
-      return Promise.all(artistList.map(async x => findArtist(spotifyApi, x)))
+      return Promise.all(promises)
     }
   } catch (e) {
     console.log(e)
@@ -171,6 +176,7 @@ async function refreshPlaylist () {
     }
 
     const artists = compact(await findArtists(spotifyApi, artistList))
+    console.log(artists)
     const topTracks = await Promise.all(artists.map(async x => spotifyApi.getArtistTopTracks(x, 'US')))
 
     // build artist data cache
