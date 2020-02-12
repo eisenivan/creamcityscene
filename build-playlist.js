@@ -107,7 +107,7 @@ async function findArtists (spotifyApi, artistList) {
       const promises = []
       for (let i = 0; i < artistList.length; i++) {
         promises.push(findArtist(spotifyApi, artistList[i], `${i + 1} of ${artistList.length}`))
-        await timer(500)
+        await timer(2000)
       }
 
       return Promise.all(promises)
