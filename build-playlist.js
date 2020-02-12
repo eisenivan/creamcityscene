@@ -84,14 +84,14 @@ async function findArtist (spotifyApi, artist, logText) {
   try {
     console.log(`${artist} (${logText})`)
     const artists = await spotifyApi.searchArtists(artist)
+
     if (typeof artists.body.artists.items === 'undefined') {
       console.log('NOT FOUND!')
     }
 
     return get(artists.body.artists.items.find(x => x.name === artist), 'id', get(artists, 'body.artists.items[0].id'))
   } catch (e) {
-    console.log(e)
-    return {}
+    console.log('FIND ARTIST ERROR', e)
   }
 }
 
@@ -107,7 +107,7 @@ async function findArtists (spotifyApi, artistList) {
       const promises = []
       for (let i = 0; i < artistList.length; i++) {
         promises.push(findArtist(spotifyApi, artistList[i], `${i + 1} of ${artistList.length}`))
-        await timer(1500)
+        await timer(500)
       }
 
       return Promise.all(promises)
