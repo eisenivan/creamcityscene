@@ -29,24 +29,22 @@ export default Index
 
 export const query = graphql`
   query HomepageQuery {
-    allArtistinfoJson(sort: {fields: body___start___date, order: ASC}) {
-      group(field: body___start___date) {
+    allArtistinfoJson(sort: {fields: start___date, order: ASC}) {
+      group(field: start___date) {
         edges {
           node {
-            body {
-          images {
-            url
-          }
-          external_urls {
-            spotify
-          }
-          name
-          popularity
-          genres
-          start {
-            date(formatString: "M/D/YYYY")
-          }
-        }
+            images {
+              url
+            }
+            external_urls {
+              spotify
+            }
+            name
+            popularity
+            genres
+            start {
+              date(formatString: "M/D/YYYY")
+            }
           }
         }
       }

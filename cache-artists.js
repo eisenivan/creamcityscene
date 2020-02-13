@@ -12,7 +12,7 @@ axios.get(`https://api.songkick.com/api/3.0/metro_areas/15405-us-milwaukee/calen
   .then(({ data }) => {
     fs.writeFileSync('./site/content/shows/shows.json', JSON.stringify(data.resultsPage.results.event))
     const reduced = uniq(flatten(get(data, 'resultsPage.results.event', []).map(x => x.performance.map(y => y.artist.displayName))))
-    fs.writeFileSync('./list.json', JSON.stringify(reduced.slice(0, 60), null, 2))
+    fs.writeFileSync('./list.json', JSON.stringify(reduced, null, 2))
     console.log(`Cached ${reduced.length} artists!`)
   }, (e) => {
     console.log(e)

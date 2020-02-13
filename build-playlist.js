@@ -107,7 +107,7 @@ async function findArtists (spotifyApi, artistList) {
       const promises = []
       for (let i = 0; i < artistList.length; i++) {
         promises.push(findArtist(spotifyApi, artistList[i], `${i + 1} of ${artistList.length}`))
-        await timer(2000)
+        await timer(200)
       }
 
       return Promise.all(promises)
@@ -139,23 +139,23 @@ async function addTracks (songs) {
 }
 
 function sortTopTracksByPopularity (arr) {
-  return sortBy(arr, o => get(o.body.tracks[0], 'popularity', 0)).reverse()
+  return sortBy(arr, o => get(o, 'body.tracks[0].popularity', 0)).reverse()
 }
 
 function sortArtistsByPopularity (arr) {
-  return sortBy(arr, o => get(o.body, 'popularity', 0)).reverse()
+  return sortBy(arr, o => get(o, 'popularity', 0)).reverse()
 }
 
 function mergeShowInfo (artistInfo) {
   console.log('merge show info')
   return artistInfo.map((x) => {
-    const artist = get(x, 'body.name')
+    const artist = get(x, 'name')
     showList.forEach((show) => {
       const performances = get(show, 'performance', [])
 
       if (performances.find(performance => performance.artist.displayName === artist)) {
-        set(x, 'body.performance', show.performance)
-        set(x, 'body.start', show.start)
+        set(x, 'performance', show.performance)
+        set(x, 'start', show.start)
       }
     })
 
@@ -176,10 +176,29 @@ async function refreshPlaylist () {
     }
 
     const artists = compact(await findArtists(spotifyApi, artistList))
-    const topTracks = await Promise.all(artists.map(async x => spotifyApi.getArtistTopTracks(x, 'US')))
+    const topTracks = await Promise.all(artists.map(async (x) => {
+      await timer(100)
+      return spotifyApi.getArtistTopTracks(x, 'US')
+    }))
 
     // build artist data cache
-    const artistInfo = await Promise.all(artists.map(async x => spotifyApi.getArtist(x)))
+    const pages = Math.ceil(artists.length / 50)
+    const artistArr = []
+
+    for (let i = 0; i < pages; i++) {
+      let res = await axios.get(
+        `https://api.spotify.com/v1/artists?ids=${artists.slice(i + (i * 50), (i + 1) * 50).join(',')}`,
+        {
+          headers: {
+            Authorization: `Bearer ${authorizationCode}`
+          }
+        }
+      )
+
+      artistArr.push(res.data.artists)
+    }
+
+    const artistInfo = flatten(artistArr)
 
     // merge event details
     const artistInfoWithShows = mergeShowInfo(artistInfo)
