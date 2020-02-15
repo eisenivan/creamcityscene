@@ -209,6 +209,7 @@ async function refreshPlaylist () {
       sortTopTracksByPopularity(topTracks)
         .map(x => x.body.tracks
           .map(y => y.uri))
+        .slice(0, 69)
     )
 
     await addTracks(compact(finalSongs))
