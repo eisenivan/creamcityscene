@@ -2,4 +2,4 @@ To keep it *short* and *sweet*, creamcityscene.com is a script that pulls music 
 
 Presented with no claims of functionality. Right now it's based on a pretty crude Spotify API search. If you think you should be listed, and don't see yourself, make double sure your band name is exactly the same in Songkick and Spotify.
 
-I hope you enjoy it! If you have any comments or questions, you can reach me on Twitter at [@ivaneisenberg](https://twitter.com/ivaneisenberg)
+I hope you enjoy it! If you have any comments or questions, you can reach me on Twitter at [@banjoivan](https://twitter.com/ivaneisenberg)
