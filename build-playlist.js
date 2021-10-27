@@ -1,3 +1,4 @@
+require('dotenv').config()
 const fs = require('fs')
 const SpotifyWebApi = require('spotify-web-api-node')
 const axios = require('axios')
@@ -14,7 +15,7 @@ const playlistId = '2a6r9HrB1x3rxBqlhb2qSn'
 let authorizationCode = 'TOKEN'
 const config = {
   headers: {
-    Authorization: 'Basic YmMzOTI2MmYzOWZkNDNkM2EzNTVmNDY5YjdiMjEzYmU6ZjI1YjFkZGUxMGUxNDY4ODg4MGQ0YzkxZTFkMzk4NDc='
+    Authorization: authToken
   }
 }
 
@@ -39,8 +40,8 @@ async function auth () {
     authorizationCode = data.access_token
 
     const spotifyApi = new SpotifyWebApi({
-      clientId: 'bc39262f39fd43d3a355f469b7b213be',
-      clientSecret: 'f25b1dde10e14688880d4c91e1d39847',
+      clientId: process.env.clientId,
+      clientSecret: process.env.clientSecret,
       accessToken: data.access_token
     })
 
