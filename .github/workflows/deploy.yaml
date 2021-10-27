@@ -16,11 +16,11 @@ jobs:
       with:
           node-version: 12
 
-    - name: Build React App
-      run: npm install
-
     - name: Install Surge and gatsby
       run: npm install -g surge gatsby
+
+    - name: Build React App
+      run: npm install
       
     - name: Build Gatsby
       run: |
